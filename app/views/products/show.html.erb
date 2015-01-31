@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name: Small, Riley-Sized Photo Package</strong>
+  <%= @product.name %>
+</p>
+
+<p>
+  <strong>Description: A 30 minute photo shoot that will get you 5 to 10 edited digital pictures of your pet, depending on how patient they are. Locations can vary and I have many that I can suggest if you need some ideas!</strong>
+  <%= @product.description %>
+</p>
+
+<p>
+  <strong><img url="https://s-media-cache-ak0.pinimg.com/236x/72/e6/8a/72e68a55c862b97334b08bb29a3437eb.jpg")</strong>
+  <%= @product.image_url %>
+</p>
+
+<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', products_path %>
