@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'static_pages/index'
+
   resources :products
 
   get 'pages/landing_page'
