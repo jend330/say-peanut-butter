@@ -3,11 +3,11 @@ Rails.application.routes.draw do
 
   resources :products
 
-  get 'pages/landing_page'
+  get 'pages/landing_page' => 'static_pages#home'
 
-  get 'pages/contact'
+  get 'pages/contact' => 'static_pages#contact'
 
-  get 'pages/about'
+  get 'pages/about' => 'static_pages#about'
 
     root 'pages#landing_page'
   # The priority is based upon order of creation: first created -> highest priority.
