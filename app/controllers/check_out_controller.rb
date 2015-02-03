@@ -1,4 +1,4 @@
-class check_outController < ApplicationController
+class CheckOutController < ApplicationController
 	def index
 	end
 
@@ -10,5 +10,5 @@ class check_outController < ApplicationController
 
 	def create
 	end
-	
+
 end
