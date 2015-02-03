@@ -1,8 +1,4 @@
 class OrdersController < ApplicationController
-	layout "inventory"
-	#...
-	end
-
 	def index
 	end
 
@@ -14,4 +10,5 @@ class OrdersController < ApplicationController
 
 	def create
 	end
+
 end
