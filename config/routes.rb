@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'welcome/index'
+
   get 'static_pages/index'
 
   resources :products
@@ -9,9 +11,10 @@ Rails.application.routes.draw do
 
   get 'pages/about'
 
-    root 'pages#landing_page'
+    root 'static_pages#landing_page'
 
     resources :orders, only: [:index, :show, :new, :create]
+    resources :check_out, only: [:index, :show, :new, :create]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

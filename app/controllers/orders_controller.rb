@@ -1,4 +1,8 @@
 class OrdersController < ApplicationController
+	layout "inventory"
+	#...
+	end
+
 	def index
 	end
 
