@@ -3,3 +3,9 @@ class StaticPagesController < ApplicationController
   	@featured_product = Product.first
   end
 end
+
+
+def products
+    @products = Product.all
+  end
+

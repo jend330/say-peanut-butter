@@ -1,6 +1,10 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
 
+def products
+    @products = Product.all
+  end
+
   # GET /products
   # GET /products.json
   def index
@@ -72,3 +76,10 @@ class ProductsController < ApplicationController
       params.require(:product).permit(:name, :description, :image_url)
     end
 end
+
+  def index
+    @products = Product.all
+    render layout: "products"
+  end
+
+  
