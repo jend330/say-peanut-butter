@@ -1,11 +1,6 @@
 class StaticPagesController < ApplicationController
-  def landing_page
-  	@featured_product = Product.first
-  end
+	def landing_page
+		@featured_product = Product.first
+		@products = Product.all
+	end
 end
-
-
-def products
-    @products = Product.all
-  end
-
