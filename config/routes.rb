@@ -1,15 +1,13 @@
 Rails.application.routes.draw do
-  get 'welcome/index'
 
-  get 'static_pages/index'
 
   resources :products
 
-  get 'pages/landing_page'
 
-  get 'pages/contact'
 
-  get 'pages/about'
+  get 'contact', to: 'static_pages#contact'
+
+  get 'about', to: 'static_pages#about'
 
     root 'static_pages#landing_page'
 
