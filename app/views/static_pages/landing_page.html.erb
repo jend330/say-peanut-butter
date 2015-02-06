@@ -18,6 +18,8 @@
     </div>
   </div>
 
+  <div class="row">
+  <div class="col-xs-4 col-xs-offset-4" style="padding-left:60px" id="carousel">
   <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
@@ -30,25 +32,16 @@
         <div class="carousel-inner" role="listbox">
           <% @products.each do |product| %>
           <div class="item active">
-           <%= product.image_url %>
-           <div class="carousel-caption">
-            <%= product.name %>
-          </div>
-        </div>
+           <%= image_tag(product.image_url) %>
+         </div>
+         <div class="item">
+           <%= image_tag(product.image_url) %>
+         </div>
         <div class="item">
-         <%= product.image_url %>
-         <div class="carousel-caption">
-           <%= product.name %>
-         </div>
+           <%= image_tag(product.image_url) %>
+         </div> 
+         <% end %>
        </div>
-       <div class="item">
-         <%= product.image_url %>
-         <div class="carousel-caption">
-           <%= product.name %>
-         </div>
-       </div>
-       <% end %>
-     </div>
 
      <!-- Controls -->
      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
@@ -60,6 +53,9 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
+  </div>
+</div>
+</div>
 
   <ul class="thumbnails">
     <div class="row">
@@ -132,4 +128,12 @@
 </ul>
 </div>
 </div>
+
+<script language="JavaScript" type="text/javascript">
+  $(document).ready(function(){
+    $('.carousel').carousel({
+      interval: 2000
+    })
+  });    
+</script>
 
