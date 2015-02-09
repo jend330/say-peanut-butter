@@ -20,7 +20,6 @@ p {
 }
 #jumbo-other {
 	background-image: url("/images/nose-transparent.jpg");
-	color: black;
 }
 #jumbo-other h2 {
 	color: black;
@@ -31,6 +30,12 @@ p {
 .carousel-inner {
 	height: 300px;
 	width: 300px;
+}
+#search.label {
+	font-size: 2em;
+}
+body {
+	background-color: #181516;
 }
 
 

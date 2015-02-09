@@ -18,3 +18,22 @@ Location: Ellicott City, MD </h3>
 <p>I happily do pro "bone"-o work for any shelters, foster families or organizations, or any other not-for-profit animal organization that has a need for a photographer. Please contact me and let me know how I can help!</p>
 </div>
 </div>
+
+<%= form_for User.new do |f| %>
+<div class="field">
+	<%= f.label :person, :first_name %><br>
+	<%= f.text_field :person, :first_name %>
+</div>
+<div class="field">
+	<%= f.label :person, :last_name %><br>
+	<%= f.text_field :person, :last_name %>
+</div>
+<div class="field">
+    <%= f.label :Email, :Email %><br>
+    <%= f.text_field :Email, :Email%>
+  </div>
+<div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+

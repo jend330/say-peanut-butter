@@ -15,11 +15,38 @@
  */
 
  body {
- 	background-color: black;
+ 	background-color: #181516;
  }
  .jumbotron {
 	text-align: center;
-	background-color: black;
+	background-color: #181516;
 	color: white;
 	margin-bottom: 0px;
+}
+h2 {
+	color: #EECA66;
+}
+.carousel-inner{
+  position:relative; 
+  width:300px;
+  margin:0 auto;
+}
+.carousel-controls{
+ position:relative; 
+  width:300px;
+  margin:0 auto;
+  padding-bottom: 20px;
+}
+
+.carousel-indicators{
+   top:0px; 
+}
+#PB {
+	color: #A18535;
+}
+a:link {
+	color:#EECA66;
+}
+a:visited {
+	color: #7FF1D0;
 }
