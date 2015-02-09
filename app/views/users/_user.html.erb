@@ -1,17 +1,15 @@
-<%= form_for (@user) do |f| %>
-<div class="field">
-  <%= f.label :first_name %><br>
-  <%= f.text_field :first_name %>
-</div>
-<div class="field">
-  <%= f.label :last_name %><br>
-  <%= f.text_field :last_name %>
-</div>
-<div class="field">
-  <%= f.label :email_field("user", "address") %><br>
-  <%= f.label :email_field %>
-</div>
-<div class="actions">
-  <%= f.submit %>
-</div>
-<% end %>
+<% @users.each do |user| %>
+	<%= render partial: "user", locals: {user: user} %>
+	<% end %>
+
+
+<tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.first_name %></td>
+        <td><%= user.last_description %></td>
+        <td><%= user.email %></td>
+        <td><%= link_to 'Show', user %></td>
+        <td><%= link_to 'Edit', edit_user_path(user) %></td>
+        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
