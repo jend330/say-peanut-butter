@@ -10,6 +10,8 @@ Rails.application.routes.draw do
 
   get 'about', to: 'static_pages#about'
 
+  get 'user_mailer/contact_form'
+
   post 'static_pages/thank_you'
 
     root 'static_pages#landing_page'
