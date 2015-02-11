@@ -38,8 +38,10 @@
   <%= text_field_tag(:q) %>
   <%= submit_tag("Search", :class => 'btn btn-warning') %>
   <% end %> 
-
+  
+<div class="container">
 <%= yield %>
+</div>
 
 </body>
 </html>
