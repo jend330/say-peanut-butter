@@ -40,6 +40,7 @@ p {
 }
 #jumbotron {
 	text-align: center;
+	background-color: #82C6CC;
 }
 nav ul li {
 	font-family: Open Sans;
@@ -47,4 +48,12 @@ nav ul li {
 }
 #jumbo-other {
 	background-image: url(../images/nose-transparent.jpg);
+}
+.carousel-example-generic {
+	height: 300px;
+	width: 300px;
+}
+.carousel.inner {
+	height: 300px;
+	width: 300px;
 }

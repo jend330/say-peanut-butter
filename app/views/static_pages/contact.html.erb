@@ -22,22 +22,28 @@ Location: Ellicott City, MD </h3>
 </div>
 </div>
 
-<%= form_for User.new do |f| %>
-<div class="field">
-	<%= f.label :person, :first_name %><br>
-	<%= f.text_field :first_name %>
+<h3>Send Us An Email</h3>
+
+<%= flash[:notice] %>
+
+<%= form_tag("/static_pages/thank_you") do %>
+<div class="row">
+	<div class="col-xs-12 col-md-4">
+		<div class="form-group">
+			<%= label_tag :name, "Name" %>
+	<%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter Name" %>
+		</div>
+		<div class="form-group">
+			<%= label_tag :email, "Email Address" %>
+	<%= text_field_tag :email, nil, class: "form-control", placeholder: "Enter Email" %>
+		</div>
+		<div class="form-group">
+			<%= label_tag :message, "Message" %>
+	<%= text_area_tag :message, nil, class: "form-control", placeholder: "Enter Message" %>
+		</div>
+		<%= submit_tag "Send" %>
+	</div>
 </div>
-<div class="field">
-	<%= f.label :person, :last_name %><br>
-	<%= f.text_field :last_name %>
-</div>
-<div class="field">
-    <%= f.label :Email, :Email %><br>
-    <%= f.text_field :email %>
-  </div>
-<div class="actions">
-    <%= f.submit %>
-  </div>
 <% end %>
 
 </div>
