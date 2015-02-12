@@ -24,11 +24,13 @@
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
-          <div class="item active">
-          <% @products.each do |product| %>
-          <%= image_tag(product.image_url, {:class => "item"})  %>
+          
+          <% @products.each_with_index do |product, i| %>
+          <% cls = "item" %>
+          <% cls += " active" if i == 0 %>
+          <%= image_tag(product.image_url, {:class => cls})  %>
           <% end %>
-        </div>
+        
       </div>
 
        <!-- Controls -->
