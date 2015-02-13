@@ -49,11 +49,8 @@ nav ul li {
 #jumbo-other {
 	background-image: url(../images/nose-transparent.jpg);
 }
-.carousel-example-generic {
+.carousel-inner {
 	height: 300px;
 	width: 300px;
-}
-.carousel.inner {
-	height: 300px;
-	width: 300px;
+	left: 20px;
 }
