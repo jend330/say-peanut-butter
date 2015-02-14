@@ -49,6 +49,9 @@ nav ul li {
 #jumbo-other {
 	background-image: url(../images/nose-transparent.jpg);
 }
+.jumbotron h1 {
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
 .carousel-inner {
 	height: 300px;
 	width: 300px;
@@ -56,5 +59,10 @@ nav ul li {
 	display: block;
 	margin: 0 auto;
 }
-
+.carousel-indicators {
+	margin: 0 auto;
+}
+tbody td {
+	color: black;
+}
 
