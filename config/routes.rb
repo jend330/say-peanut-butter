@@ -1,17 +1,17 @@
 Rails.application.routes.draw do
 
 
-  devise_for :users, :path => '', :path_names => {:sign_in => 'login', :sign_out => 'logout'}
+  
+ 
+  devise_for :users
   resources :products
-  resources :users
+  
 
 
 
   get 'contact', to: 'static_pages#contact'
 
   get 'about', to: 'static_pages#about'
-
-  get 'users', to: 'users#index'
 
   get 'user_mailer/contact_form'
 

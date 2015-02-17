@@ -4,7 +4,7 @@ Devise.setup do |config|
   # The secret key used by Devise. Devise uses this key to generate
   # random tokens. Changing this key will render invalid all existing
   # confirmation, reset password and unlock tokens in the database.
-  # config.secret_key = '9c5adbb0760f250a4abf50ee61c125389804e9729eb72cfe847ed047c4144ba38d9efe99ca9d12c2b5c963327bbe534ba4c0f783f17cb23bd6a6f012cf031db7'
+  # config.secret_key = 'fbc049f001c92ec96fcef4bf6dd80dc159731af50e9e7e9de008857bc63e372394f999bad9dca0fe5c1bae868a1cb811750f5d69eb99757d5e54f1912324cf37'
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
@@ -97,7 +97,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 10
 
   # Setup a pepper to generate the encrypted password.
-  # config.pepper = 'ff3817b6ae08f513e2ff9069975176c55b25242bed53e3db15f903c3635f66552043c41c98fc2260153fedd5ab21e68286d5ac73e0ac078aa70dceda7499c1d1'
+  # config.pepper = '28b0b2aec4d41008c5115ebdc5639484cbd592d20501a09bef66ee9cb41d6ad491ba4b76ee7a3c0f82d98057382d0211bffbf17291f872ab361a0020f57ff716'
 
   # ==> Configuration for :confirmable
   # A period that the user is allowed to access the website even without
@@ -173,7 +173,7 @@ Devise.setup do |config|
 
   # Number of authentication tries before locking an account if lock_strategy
   # is failed attempts.
-  # config.maximum_attempts = 10
+  # config.maximum_attempts = 20
 
   # Time interval to unlock the account if :time is enabled as unlock_strategy.
   # config.unlock_in = 1.hour
