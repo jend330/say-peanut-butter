@@ -3,34 +3,36 @@ require 'rails_helper'
 	describe User do
 
 	context "email and password present" do
-		before { @user = User.new(email: "example@email.com", encrypted_password: "abc123456") }
+		before { @user = User.create(email:"test", encrypted_password:"test") }
 
 		it "should email and password" do
-			expect(@user).to eq "example@email.com, abc123456"
+			expect(@user.email).to eq "test"
+			expect(@user.encrypted_password).to eq "test"
 		end
 	end
 
 	context "email missing" do
-		before { @user = User.new(encrypted_password: "abc123456") }
+		before { @user = User.create(encrypted_password:"test") }
 
-		it "should return User product id and User total" do
-			expect(@user).to eq "abc123456"
+		it "should return encrypted password" do
+			expect(@user.encrypted_password).to eq "test"
 		end
 	end
 
 	context "password missing" do
-		before { @user = User.new(email: "example@email.com") }
+		before { @user = User.create(email:"test") }
 
-		it "should return user id and User total" do
-			expect(@user).to eq "example@email.com"
+		it "should return email" do
+			expect(@user.email).to eq "test"
 		end
 	end
 
 	context "email and password missing" do
-		before { @user = User.new() }
+		before { @user = User.create() }
 
 		it "should return nothing" do
-			expect(@user).to eq ""
+			expect(@user.email).to eq ""
+			expect(@user.encrypted_password).to eq ""
 		end
 	end
 end
