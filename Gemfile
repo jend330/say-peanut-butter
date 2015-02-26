@@ -11,6 +11,11 @@ group :development do
   gem 'sqlite3'
   gem 'rspec-rails', '~> 3.2.0'
   gem 'database_cleaner', '~> 1.4.0'
+  gem 'guard', '~> 2.12.4'
+  gem 'listen', '~> 2.8.5'
+  gem 'guard-rspec', '~> 4.5.0', require: false
+  gem 'guard-spork', '~> 2.1.0'
+  gem 'spork-rails', '~> 4.0.0'
 end
 
 group :production do
