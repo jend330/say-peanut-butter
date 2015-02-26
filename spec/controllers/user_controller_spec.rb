@@ -6,20 +6,20 @@ RSpec.describe UserController, type: :controller do
 		@user = User.create(name: "test", encrypted_password:"test")
 	end
 
-	describe'GET#show'do
-		it "assigns the requested user to @user" do
-			user = create(:user)
-			get :show, id: user
-			expect(assigns(:user)).to eq user
-		end
+# 	describe'GET#new'do
+# 		it "assigns a new user to @user" do
+# 			user = User.create
+# 			get :new_user_registration
+# 			expect(assigns(:user)).to eq user
+# 		end
 
-		it "renders the :show template" do
-			user = create(:user)
-				get :show, id: user 
-				expect(response).to render_template :show
-		end 
+# 		it "renders the :new template" do
+# 			user = User.create
+# 				get :new_user_registration
+# 				expect(response).to render_template :new
+# 		end 
 
-	end
+# 	end
 
 
 end
