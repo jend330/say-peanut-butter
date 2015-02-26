@@ -6,6 +6,7 @@ gem 'rails', '4.2.0'
 gem 'bootstrap-sass', '~> 3.3.3'
 gem 'devise', '~> 3.4.1'
 gem 'factory_girl_rails', '~> 4.5.0'
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 # Use sqlite3 as the database for Active Record
 group :development do
   gem 'sqlite3'
