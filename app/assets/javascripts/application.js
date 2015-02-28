@@ -16,3 +16,15 @@
 //= require bootstrap-sprockets
 //= require bootstrap
 //= require_tree .
+$(document).ready(function(){
+  $('.product-carousel').slick({
+    setting-name: setting-value
+  });
+});
+$('.fade').slick({
+  dots: true,
+  infinite: true,
+  speed: 500,
+  fade: true,
+  cssEase: 'linear'
+});

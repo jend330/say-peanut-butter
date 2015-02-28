@@ -81,3 +81,6 @@ textarea {
 ul li {
 	color: black;
 }
+.fotorama img {
+	width: 1290px;
+}
