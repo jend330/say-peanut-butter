@@ -5,6 +5,8 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.0'
 gem 'bootstrap-sass', '~> 3.3.3'
 gem 'devise', '~> 3.4.1'
+gem 'cancancan', '~> 1.10.1'
+gem 'wiki', '~> 0.1.0'
 gem 'factory_girl_rails', '~> 4.5.0'
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 # Use sqlite3 as the database for Active Record

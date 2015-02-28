@@ -64,6 +64,10 @@ nav ul li {
 }
 tbody td {
 	color: black;
+	margin: 20px;
+}
+td a {
+	margin: 20px;
 }
 label {
 	color: black;
@@ -74,4 +78,6 @@ input {
 textarea {
 	color: black;
 }
-
+ul li {
+	color: black;
+}
