@@ -15,7 +15,7 @@
   <%= @product.image_url %>
 </p>
 
-<%= form_tag "/payments/create" do %>
+<%= form_tag("/payments/create", remote: true) do %>
   <%= render partial: "shared/stripe_checkout_button" %>
 <% end %>
 
