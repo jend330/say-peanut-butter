@@ -10,6 +10,7 @@ gem 'wiki', '~> 0.1.0'
 gem 'brakeman', :require => false
 gem 'factory_girl_rails', '~> 4.5.0'
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
+gem 'dalli'
 # Use sqlite3 as the database for Active Record
 group :development do
   gem 'sqlite3'

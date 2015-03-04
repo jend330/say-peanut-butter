@@ -12,8 +12,11 @@
     </tr>
   </thead>
 
+  <% cache cache_key_for_products do %>
+    All available products:
   <tbody>
     <% @products.each do |product| %>
+      <% cache(p) do %>
       <tr>
         <td><%= product.name %></td>
         <td><%= product.description %></td>
@@ -24,7 +27,10 @@
       </tr>
     <% end %>
   </tbody>
+  <% end %>
 </table>
+<% end %>
+<% end %>
 
 <br>
 
