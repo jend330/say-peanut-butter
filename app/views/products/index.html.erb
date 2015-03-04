@@ -13,7 +13,7 @@
   </thead>
 
   <tbody>
-    <% cache(cache_key_for_products) do %>
+    <% cache do %>
     All available products:
     <% @products.each do |product| %>
     <tr>
