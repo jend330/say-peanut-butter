@@ -24,6 +24,9 @@
       <td><%= product.description %></td>
       <% end %>
       <% cache(product) do %>
+      <td><%= product.price %></td>
+      <% end %>
+      <% cache(product) do %>
       <td><%= product.image_url %></td>
       <% end %>
       <td><%= link_to 'Show', product %></td>

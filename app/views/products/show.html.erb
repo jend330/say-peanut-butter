@@ -1,22 +1,36 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
-  <%= @product.name %>
+	<strong>Name:</strong>
+	<%= @product.name %>
 </p>
 
 <p>
-  <strong>Description:</strong>
-  <%= @product.description %>
+	<strong>Description:</strong>
+	<%= @product.description %>
 </p>
 
 <p>
-  <strong>Image url:</strong>
-  <%= @product.image_url %>
+	<strong>Price:</strong>
+	<%= @product.price %>
+</p>
+
+<p>
+	<strong>Image url:</strong>
+	<%= @product.image_url %>
 </p>
 
 <%= form_tag("/payments/create", remote: true) do %>
-  <%= render partial: "shared/stripe_checkout_button" %>
+<form action="" method="POST">
+	<script
+	src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+	data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+	data-image="/images/otto_paw.jpg"
+	data-name=<%= @product.name %>
+	data-description=<%= @product.description %>
+	data-amount="15000">
+	</script>
+</form>
 <% end %>
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
