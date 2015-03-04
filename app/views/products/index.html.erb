@@ -15,15 +15,15 @@
   <tbody>
     <% cache(cache_key_for_products) do %>
     All available products:
-    <% Product.all.each do |p| %>
+    <% @products.each do |product| %>
     <tr>
-      <% cache(p) do %>
+      <% cache(product) do %>
       <td><%= product.name %></td>
       <% end %>
-      <% cache(p) do %>
+      <% cache(product) do %>
       <td><%= product.description %></td>
       <% end %>
-      <% cache(p) do %>
+      <% cache(product) do %>
       <td><%= product.image_url %></td>
       <% end %>
       <td><%= link_to 'Show', product %></td>
