@@ -12,11 +12,8 @@
     </tr>
   </thead>
 
-  <% cache cache_key_for_products do %>
-    All available products:
   <tbody>
     <% @products.each do |product| %>
-      <% cache(p) do %>
       <tr>
         <td><%= product.name %></td>
         <td><%= product.description %></td>
@@ -25,15 +22,11 @@
         <td><%= link_to 'Edit', edit_product_path(product) %></td>
         <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
-    <% end %>
   </tbody>
   <% end %>
 </table>
-<% end %>
-<% end %>
 
 <br>
 
 <%= link_to 'New Product', new_product_path %>
 
-<% end %>
