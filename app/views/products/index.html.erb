@@ -13,29 +13,18 @@
   </thead>
 
   <tbody>
-    <% cache do %>
-    All available products:
     <% @products.each do |product| %>
     <tr>
-      <% cache(product) do %>
       <td><%= product.name %></td>
-      <% end %>
-      <% cache(product) do %>
       <td><%= product.description %></td>
-      <% end %>
-      <% cache(product) do %>
       <td><%= product.price %></td>
-      <% end %>
-      <% cache(product) do %>
       <td><%= product.image_url %></td>
-      <% end %>
       <td><%= link_to 'Show', product %></td>
       <td><%= link_to 'Edit', edit_product_path(product) %></td>
       <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
     </tr>
     <% end %>
   </tbody>
-  <% end %>
 </table>
 
 <br>
