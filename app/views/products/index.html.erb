@@ -12,9 +12,11 @@
     </tr>
   </thead>
 
+  <% cache do %>
   <tbody>
     <% @products.each do |product| %>
     <tr>
+      <% cache(product) do %>
       <td><%= product.name %></td>
       <td><%= product.description %></td>
       <td><%= product.price %></td>
@@ -22,9 +24,11 @@
       <td><%= link_to 'Show', product %></td>
       <td><%= link_to 'Edit', edit_product_path(product) %></td>
       <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      <% end %>
     </tr>
     <% end %>
   </tbody>
+  <% end %>
 </table>
 
 <br>
