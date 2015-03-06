@@ -11,6 +11,7 @@ gem 'brakeman', :require => false
 gem 'factory_girl_rails', '~> 4.5.0'
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 gem 'dalli'
+gem 'rails_admin', '~> 0.6.6'
 gem 'redis-rails', '~> 4.0.0'
 # Use sqlite3 as the database for Active Record
 group :development do
