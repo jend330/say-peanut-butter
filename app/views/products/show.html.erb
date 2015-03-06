@@ -28,7 +28,7 @@
 	data-image="/images/otto_paw.jpg"
 	data-name=<%= @product.name %>
 	data-description=<%= @product.description %>
-	data-amount="15000">
+	data-amount="<%= @product.price_in_cents %>">
 	</script>
 </form>
 <% end %>
