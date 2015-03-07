@@ -8,8 +8,19 @@ class ApplicationController < ActionController::Base
   redirect_to main_app.root_url, :alert => exception.message
 	end
 
-	# def login_required
- #    redirect_to('/') if current_user.blank?
- #  end
+helper_method :admin?
 
+protected
+
+	def authorize
+		unless admin?
+			flash[:error] = "unauthorized access"
+			redirect_to landing_page_path
+			false
+		end
+	end
+
+	def admin?
+		request_remote_ip == "96.244.2.155"
+	end
 end
