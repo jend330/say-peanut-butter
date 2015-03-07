@@ -1,6 +1,12 @@
 class UserController < ApplicationController
-  before_action :set_user, only: [:show, :edit, :update, :destroy]
+  before_action :set_user, only: [:show]
   load_and_authorize_resource
+
+  before_filter :login_required, :only => :action_available_only_for_logged_in
+
+  def action_available_only_for_logged_in
+    :show
+  end
 
   # GET /users
   # GET /users.json
