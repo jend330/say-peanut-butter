@@ -15,12 +15,13 @@ protected
 	def authorize
 		unless admin?
 			flash[:error] = "unauthorized access"
-			redirect_to landing_page_path
+			redirect_to root_path
 			false
 		end
 	end
 
 	def admin?
-		request_remote_ip == "96.244.2.155"
+		# request_remote_ip == "96.244.2.155"
+		false
 	end
 end

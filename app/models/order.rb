@@ -1,3 +1,3 @@
 class Order < ActiveRecord::Base
-	belongs_to :product, :user
+	belongs_to :product
 end
