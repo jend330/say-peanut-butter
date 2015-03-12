@@ -13,6 +13,8 @@ Rails.application.routes.draw do
 
   get 'about', to: 'static_pages#about'
 
+  get 'prices', to: 'static_pages#photo_packages'
+
   get 'user_mailer/contact_form'
 
   post 'static_pages/thank_you'

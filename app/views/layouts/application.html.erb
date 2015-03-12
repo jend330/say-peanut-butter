@@ -48,15 +48,7 @@
         <li><a href="/">Home</a></li>
         <li><a href="/about">About</a></li>
         <li><a href="/contact">Contact</a></li>
-        <% if user_signed_in? %>
-        <li>
-          <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>        
-        </li>
-        <% else %>
-        <li>
-          <%= link_to('Login', new_user_session_path)  %>  
-        </li>
-        <% end %>
+        <li><a href="/prices">Photo Packages</a></li>
       </ul>   
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -68,5 +60,8 @@
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.3/fotorama.js"></script>
+<script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+<script src="js/jquery.jcarousel.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

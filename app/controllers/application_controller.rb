@@ -8,20 +8,19 @@ class ApplicationController < ActionController::Base
   redirect_to main_app.root_url, :alert => exception.message
 	end
 
-helper_method :admin?
+# helper_method :admin?
 
-protected
+# protected
 
-	def authorize
-		unless admin?
-			flash[:error] = "unauthorized access"
-			redirect_to root_path
-			false
-		end
-	end
+# 	def authorize
+# 		unless admin?
+# 			flash[:error] = "unauthorized access"
+# 			redirect_to root_path
+# 			false
+# 		end
+# 	end
 
-	def admin?
-		# request_remote_ip == "96.244.2.155"
-		false
-	end
+# 	def admin?
+# 		# request_remote_ip == "96.244.2.155"
+# 	end
 end

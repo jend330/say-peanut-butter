@@ -24,12 +24,13 @@
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
-          
+          <a href="/prices">
           <% @products.each_with_index do |product, i| %>
           <% cls = "item" %>
           <% cls += " active" if i == 0 %>
           <%= image_tag(product.image_url, {:class => cls})  %>
           <% end %>
+          </a>
         
       </div>
 
@@ -51,19 +52,6 @@
   </div>
 </div>
 </div>
-
-
-<!-- <div class="fotorama" data-allowfullscreen="true" data-nav="thumbs">
-  <img src="/images/elsie1.jpg" alt="">
-  <img src="/images/otto1.jpg" alt="">
-  <img src="/images/riley1.jpg" alt="">
-  <img src="/images/elsie2.jpg" alt="">
-  <img src="/images/otto2.jpg" alt="">
-  <img src="/images/otto3.jpg" alt="">
-  <img src="/images/otto_paw.jpg" alt="">
-  <img src="/images/elsie3.jpg" alt="">
-  <img src="/images/riley2.jpg" alt="">
-</div> -->
 
 <ul class="thumbnails">
   <div class="row">

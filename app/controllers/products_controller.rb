@@ -1,6 +1,6 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
-  before_filter :authorize, :except => :show
+  # before_filter :authorize, :except => :show
 
   # GET /products
   # GET /products.json
