@@ -18,7 +18,7 @@
 	data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
 	data-image="/images/otto_paw.jpg"
 	data-name="<%= @product.name %>"
-	data-amount=<%= @product.price %>>
+	data-amount="<%= @product.price %> * 100">
 	</script>
 </form>
 <% end %>
