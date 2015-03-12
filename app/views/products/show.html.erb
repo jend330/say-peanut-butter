@@ -11,11 +11,11 @@
 	src="https://checkout.stripe.com/checkout.js" class="stripe-button"
 	data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
 	data-image="/images/otto_paw.jpg"
-	data-name="<%= @product.name %>"
-	data-amount=<%= @product.price %>>
+	data-name=<%= @product.name %>
+	data-amount="<%= @product.price %>">
 	</script>
 </form>
 <% end %>
 
-<%= link_to 'Edit', edit_product_path(product) %>
+<%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', prices_path %>
