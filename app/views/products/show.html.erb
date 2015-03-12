@@ -5,12 +5,6 @@
 	<%= @product.name %>
 </p>
 
-<p class="product">
-	<strong>Price:</strong>
-	<%= @product.price %>
-</p>
-
-
 <%= form_tag("/payments/create", remote: true) do %>
 <form action="" method="POST">
 	<script
@@ -18,9 +12,10 @@
 	data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
 	data-image="/images/otto_paw.jpg"
 	data-name="<%= @product.name %>"
-	data-amount="<%= @product.price %> * 100">
+	data-amount=<%= @product.price %>>
 	</script>
 </form>
 <% end %>
 
+<%= link_to 'Edit', edit_product_path(product) %>
 <%= link_to 'Back', prices_path %>
