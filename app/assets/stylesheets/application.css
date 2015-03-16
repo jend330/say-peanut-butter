@@ -42,6 +42,7 @@ p {
 .jumbotron {
 	text-align: center;
 	background-image: url(../images/peanuts.jpg);
+	background-repeat: no-repeat;
 }
 nav ul li {
 	font-family: Open Sans;
