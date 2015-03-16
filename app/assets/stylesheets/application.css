@@ -39,9 +39,9 @@ p {
 	font-size: 1.2em;
 
 }
-#jumbotron {
+.jumbotron {
 	text-align: center;
-	background-color: #82C6CC;
+	background-image: url(../images/peanuts.jpg);
 }
 nav ul li {
 	font-family: Open Sans;
@@ -49,6 +49,9 @@ nav ul li {
 }
 #jumbo-other {
 	background-image: url(../images/nose-transparent.jpg);
+}
+#PB {
+	color: #945919;
 }
 .jumbotron h1 {
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
