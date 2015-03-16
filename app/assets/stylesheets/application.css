@@ -44,6 +44,9 @@ p {
 	background-image: url(../images/peanuts.jpg);
 	background-repeat: no-repeat;
 }
+.jumbotron h2 {
+	color: #FFFFFF;
+}
 nav ul li {
 	font-family: Open Sans;
 	font-size: 1.5em;
