@@ -12,23 +12,23 @@
 	<div class="col-xs-12 col-md-4">
     <ul class="thumbnails">
       <li class="span4">
-        <a href="#" class="thumbnail">
-          <img src="holder.js/300x200" alt="">
+        <a class="thumbnail" href="/images/big-me.jpg">
+          <img src="/images/me.jpg" alt="me">
         </a>
       </li>
       <p>Hi, I'm Jen, a certified animal lover and while I do enjoy shooting them, it's only with digital cameras. I got my first dog at age 8 and I haven't been without one since. The joy a pet can bring into your life is immeasurable.</p></div>
       <div class="col-xs-12 col-md-4">
         <li class="span4">
-          <a href="#" class="thumbnail">
-            <img src="holder.js/300x200" alt="">
+          <a class="thumbnail" href="/images/big-me-riley.jpg">
+            <img src="/images/me-riley.jpg" alt="me and riley">
           </a>
         </li>
         <p>I got my first real DSLR camera about 5 years ago and that has been pure joy for me as well. It's only been natural to turn the camera on my pups and even though animals can be challenging to photograph, they are also so much fun.</p>
       </div>
       <div class="col-xs-12 col-md-4">
         <li class="span4">
-          <a href="#" class="thumbnail">
-            <img src="holder.js/300x200" alt="">
+          <a class="thumbnail" href="/images/big-me-elsie.jpg">
+            <img src="/images/me-elsie.jpg" alt="me and elsie">
           </a>
         </li>
         <p>My husband, Mark, and I share our home with Riley, our 9 year old Yorkie, Elsie, our 7 year old Weimaraner, and Otto, the new addition. He's our 6 month old Doberman. When I'm not harassing them by experimenting with new flash techniques, I love photographing the pets of friends and family. Every pet deserves to have their best side shown, so I also volunteer my services for shelters and fosters.</p>
@@ -37,6 +37,10 @@
   </ul>
 </div>
 </div>
+
+$(document).ready(function() {
+  $('.thumbnail').magnificPopup({type:'image'});
+});
 
 
 
